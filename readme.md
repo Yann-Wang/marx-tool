@@ -15,8 +15,6 @@
   ynpm i @youzan/marx-tool -g
   marx create marx-demo
   cd marx-demo
-  npm start
-  npm run watch # 新开bash执行
 ```
 
 
