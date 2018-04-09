@@ -1,0 +1,17 @@
+import React from 'react';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+
+const Demo = () =>
+  <div>
+    ${ModelName} Page
+  </div>
+
+const View = () => (
+  <Router history={browserHistory}>
+    <Route path="${ModelNameLowerCase}">
+      <IndexRoute component={Demo} />
+    </Route>
+  </Router>
+);
+
+export default View;

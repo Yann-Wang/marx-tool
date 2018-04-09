@@ -1,0 +1,13 @@
+.idea/
+node_modules/
+static/
+npm-debug.log
+build/
+dump.rdb
+yarn-error.log
+.eslintcache
+base/
+filter/
+middleware/
+
+!src/*
