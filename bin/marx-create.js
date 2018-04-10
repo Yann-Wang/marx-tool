@@ -10,7 +10,7 @@ const pkgJson = require('../package.json');
 
 const cwd     = process.cwd();
 const log     = console.log;
-const version = pkgJson.version;
+const version = pkgJson.marxVersion;
 const info    = text => log(chalk.green(`\n${text}\n`));
 const remind  = text => log(chalk.red(`\n${text}\n`));
 const success = text => log(chalk.blue(`\n${text}\n`));
@@ -23,14 +23,14 @@ Inside that directory, you can run several commands:
   * npm start: Starts the development server.
   * npm run build: Bundles the app into dist for production.
   * npm test: Run test.
-  
+
 We suggest that you begin by typing:
   cd ${dest}
   npm start
-  
+
 Open a new command session and typing:
   npm run build
-  
+
 Happy hacking!`);
 };
 

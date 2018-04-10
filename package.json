@@ -1,6 +1,7 @@
 {
   "name": "@youzan/marx-tool",
-  "version": "0.6.0",
+  "version": "0.6.2",
+  "marxVersion": "0.6.2",
   "description": "我是马克思，你们的精神领袖。-- marx框架脚手架",
   "scripts": {},
   "bin": {
