@@ -10,6 +10,7 @@
 > alias ynpm="npm --registry=https://registry.npm.qima-inc.com"
 
 - 0.6.0 以上的@youzan/marx包将脚手架逻辑和构建逻辑抽离到了@youzan/marx-tool, 所以使用0.6.0以上版本，需要额外安装两个依赖
+
 ```shell
   ynpm i @youzan/catullus -g
   ynpm i @youzan/marx-tool -g
