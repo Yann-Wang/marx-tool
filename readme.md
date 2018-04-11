@@ -1,3 +1,7 @@
+## 项目历史
+- [MarX](https://github.com/wangchao0502/MarX)是有赞公司内部的一个node框架
+- marx-tool是MarX框架的脚手架，是从该框架0.5.2版本抽离出来的，框架核心部分放在了[marx-core](https://github.com/Yann-Wang/marx-core)
+
 ## 环境搭建
 
 推荐node和npm版本如下，npm4有破坏性改动，有些包可能会安装出错，所以不推荐升级。
