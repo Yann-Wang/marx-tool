@@ -7,13 +7,10 @@
 
 首先在你的bash config文件中添加以下代码（如果用的zsh，文件路径为~/.zshrc），并执行`source ~/.zshrc`使配置生效。
 
-> alias ynpm="npm --registry=https://registry.npm.qima-inc.com"
-
-- 0.6.0 以上的@youzan/marx包将脚手架逻辑和构建逻辑抽离到了@youzan/marx-tool, 所以使用0.6.0以上版本，需要额外安装两个依赖
+- 需要额外安装两个依赖
 
 ```shell
-  ynpm i @youzan/catullus -g
-  ynpm i @youzan/marx-tool -g
+  npm i marx-tool -g
   marx create marx-demo
   cd marx-demo
 ```
@@ -29,11 +26,11 @@
 ## 如何使用
 
 以下两个命令分别在两个bash窗口执行，`npm start`启动开发环境的node服务，
-`npm run watch`启动实时打包功能。
+`npm run watch`启动实时打包功能(该功能暂时不支持，需自行实现（因为依赖了内部工具superman，该工具未开源，所以被砍掉了)）。
 
 > npm start
 
-> npm run watch
+> npm run watch # 待实现
 
 如果遇到类似下面的提示，请运行`npm rebuild`命令重新编译相关依赖包
 

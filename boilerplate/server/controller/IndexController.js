@@ -1,7 +1,7 @@
-import route          from '@youzan/marx/filter/route';
-import autobind       from '@youzan/marx/filter/autobind';
-import authorize      from '@youzan/marx/filter/authorize';
-import BaseController from '@youzan/marx/base/controller';
+import route          from 'marx-core/filter/route';
+import autobind       from 'marx-core/filter/autobind';
+import authorize      from 'marx-core/filter/authorize';
+import BaseController from 'marx-core/base/controller';
 
 @autobind
 @route.controller()

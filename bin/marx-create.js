@@ -10,7 +10,7 @@ const pkgJson = require('../package.json');
 
 const cwd     = process.cwd();
 const log     = console.log;
-const version = pkgJson.marxVersion;
+const version = pkgJson.marxCoreVersion;
 const info    = text => log(chalk.green(`\n${text}\n`));
 const remind  = text => log(chalk.red(`\n${text}\n`));
 const success = text => log(chalk.blue(`\n${text}\n`));

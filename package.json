@@ -1,13 +1,13 @@
 {
-  "name": "@youzan/marx-tool",
-  "version": "0.6.3",
-  "marxVersion": "0.6.5",
+  "name": "marx-tool",
+  "version": "0.1.0",
+  "marxVersion": "0.1.0",
   "description": "我是马克思，你们的精神领袖。-- marx框架脚手架",
   "scripts": {},
   "bin": {
     "marx": "./bin/marx.js"
   },
-  "author": "Raphael",
+  "author": "Raphael, spray",
   "license": "ISC",
   "dependencies": {
     "babel-cli": "~6.23.0",

@@ -1,6 +1,6 @@
-import route          from '@youzan/marx/filter/route';
-import autobind       from '@youzan/marx/filter/autobind';
-import BaseController from '@youzan/marx/base/controller';
+import route          from 'marx-core/filter/route';
+import autobind       from 'marx-core/filter/autobind';
+import BaseController from 'marx-core/base/controller';
 import LoginService   from '../service/LoginService';
 import redisConfig    from '../config/redis.json';
 
