@@ -1,6 +1,6 @@
 {
   "name": "@youzan/marx-tool",
-  "version": "0.6.11",
+  "version": "0.6.12",
   "marxVersion": "0.6.6",
   "description": "我是马克思，你们的精神领袖。-- marx框架脚手架",
   "scripts": {},
@@ -10,6 +10,7 @@
   "author": "Raphael",
   "license": "ISC",
   "dependencies": {
+    "@youzan/superman": "^0.6.8",
     "babel-cli": "~6.23.0",
     "babel-core": "~6.23.1",
     "babel-plugin-add-module-exports": "^0.2.1",
