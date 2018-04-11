@@ -11,6 +11,7 @@ const pkgJson = require('../package.json');
 const cwd     = process.cwd();
 const log     = console.log;
 const version = pkgJson.marxVersion;
+const mtVersion = pkgJson.version;
 const info    = text => log(chalk.green(`\n${text}\n`));
 const remind  = text => log(chalk.red(`\n${text}\n`));
 const success = text => log(chalk.blue(`\n${text}\n`));
@@ -92,7 +93,7 @@ const create = (name, options) => {
     tpl.createTemplate(cwd, {
       './template/package.json.template': `${name}/package.json`,
       './template/superman.json.template': `${name}/superman.json`
-    }, { name, version });
+    }, { name, version, mtVersion });
 
     if (options.silence) {
       successLog(name, destPath);

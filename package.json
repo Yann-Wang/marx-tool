@@ -1,7 +1,7 @@
 {
   "name": "@youzan/marx-tool",
-  "version": "0.6.3",
-  "marxVersion": "0.6.5",
+  "version": "0.6.11",
+  "marxVersion": "0.6.6",
   "description": "我是马克思，你们的精神领袖。-- marx框架脚手架",
   "scripts": {},
   "bin": {
@@ -12,6 +12,7 @@
   "dependencies": {
     "babel-cli": "~6.23.0",
     "babel-core": "~6.23.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-decorators-legacy": "~1.3.4",
     "babel-plugin-transform-object-rest-spread": "~6.23.0",
     "babel-plugin-transform-runtime": "~6.23.0",
@@ -48,7 +49,8 @@
     "plugins": [
       "transform-runtime",
       "transform-decorators-legacy",
-      "transform-object-rest-spread"
+      "transform-object-rest-spread",
+      "add-module-exports"
     ]
   }
 }

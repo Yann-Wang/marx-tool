@@ -23,7 +23,8 @@ try {
     "plugins": [
       "babel-plugin-transform-runtime",
       "babel-plugin-transform-decorators-legacy",
-      "babel-plugin-transform-object-rest-spread"
+      "babel-plugin-transform-object-rest-spread",
+      "babel-plugin-add-module-exports"
     ].map(require.resolve)
   };
 } catch (err) {
