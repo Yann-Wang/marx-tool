@@ -38,6 +38,7 @@ Happy hacking!`);
 const createLog = name => remind(`Creating a new MarX app in ${name}...`);
 
 const tplMiddleware = function(dest, boil) {
+
   return through.obj(function(file, enc, cb) {
     if (!file.stat.isFile()) {
       return cb();
@@ -92,7 +93,11 @@ const create = (name, options) => {
   copyFiles(boilPath, destPath, () => {
     tpl.createTemplate(cwd, {
       './template/package.json.template': `${name}/package.json`,
-      './template/superman.json.template': `${name}/superman.json`
+      './template/superman.json.template': `${name}/superman.json`,
+      './template/editorconfig.template': `${name}/.editorconfig`,
+      './template/eslintignore.template': `${name}/.eslintignore`,
+      './template/eslintrc.template': `${name}/.eslintrc`,
+      './template/gitignore.template': `${name}/.gitignore`
     }, { name, version, mtVersion });
 
     if (options.silence) {
