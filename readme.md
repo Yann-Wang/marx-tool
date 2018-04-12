@@ -9,15 +9,15 @@
 
 > alias ynpm="npm --registry=https://registry.npm.qima-inc.com"
 
-- 0.6.0 以上的@youzan/marx包将脚手架逻辑和构建逻辑抽离到了@youzan/marx-tool, 所以使用0.6.0以上版本，需要额外安装两个依赖
+- 0.6.0 以上的@youzan/marx包将脚手架逻辑和构建逻辑抽离到了@youzan/marx-tool,
+- 使用0.6.0以上版本的脚手架逻辑，需要全局安装@youzan/marx-tool，下面是通过脚手架命令初始化项目目录
 
 ```shell
-  ynpm i @youzan/catullus -g
   ynpm i @youzan/marx-tool -g
   marx create marx-demo
   cd marx-demo
 ```
-
+- 如果不需要创建新项目，仅仅是开发已有项目，则不需要全局安装@youzan/marx-tool，初始化的项目中已把@youzan/marx-tool作为开发依赖引入，可以直接使用marx框架的构建逻辑。
 
 
 **>>> 以上你的环境就配置好了 <<<**
