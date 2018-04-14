@@ -1,3 +1,7 @@
+[![NPM](http://nodei.co/npm/marx-tool.png?downloads=true)](http://nodei.co/npm/marx-tool/)
+
+[![NPM version](https://img.shields.io/npm/v/marx-tool.svg)]()
+
 ## 历史沿革
 - 该脚手架源于内部项目[MarX框架](https://github.com/wangchao0502/MarX)
 - 将MarX框架的脚手架逻辑和核心逻辑进行了拆分，形成了marx-tool 和 marx-core两部分
