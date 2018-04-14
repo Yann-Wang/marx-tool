@@ -1,8 +1,17 @@
 {
   "name": "marx-tool",
-  "version": "0.1.7",
-  "marxVersion": "0.1.3",
-  "description": "我是马克思，你们的精神领袖。-- marx框架脚手架",
+  "version": "0.1.8",
+  "marxVersion": "0.1.4",
+  "description": "marx--a node framework based on koa2, marx-tool--a scaffold for marx which makes facility to initialize a project quickly.",
+  "keywords": [
+    "koa",
+    "koa2",
+    "express",
+    "marx",
+    "marx-tool",
+    "marx-core",
+    "catullus"
+  ],
   "scripts": {},
   "bin": {
     "marx": "./bin/marx.js"
