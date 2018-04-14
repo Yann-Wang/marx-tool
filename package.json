@@ -1,12 +1,13 @@
 {
   "name": "marx-tool",
-  "version": "0.1.5",
-  "marxVersion": "0.1.1",
+  "version": "0.1.6",
+  "marxVersion": "0.1.2",
   "description": "我是马克思，你们的精神领袖。-- marx框架脚手架",
   "scripts": {},
   "bin": {
     "marx": "./bin/marx.js"
   },
+  "repository": "https://github.com/Yann-Wang/marx-tool.git",
   "author": "Raphael, spray",
   "license": "ISC",
   "dependencies": {
