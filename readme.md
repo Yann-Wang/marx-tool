@@ -18,15 +18,9 @@
   cd marx-demo
 ```
 - 如果不需要创建新项目，仅仅是开发已有项目，则不需要全局安装marx-tool，初始化的项目中已把marx-tool作为开发依赖引入，可以直接使用marx框架的构建逻辑。
+- 开启本地的mysql服务和redis服务，配置文件在`server/config/mysql.json`和`server/config/redis.json`中。记得修改登陆密码哦～
 
-
-**>>> 以上你的环境就配置好了 <<<**
-
-以上环境默认需要开启本地的mysql服务和redis服务，配置文件在`server/config/mysql.json`和`server/config/redis.json`中。记得修改登陆密码哦～
-
-注意：目前这个脚手架还比较初级，你看下下面的todolist就知道了。
-
-## 如何使用
+## 启动项目
 
 以下两个命令分别在两个bash窗口执行，`npm start`启动开发环境的node服务，
 `npm run watch`启动实时打包功能(该功能暂时不支持，需自行实现（因为依赖了内部工具superman，该工具未开源，所以被砍掉了)）。
@@ -39,7 +33,9 @@
 
 > Module version mismatch. Expected 48, got 46
 
-## cli
+**>>> 以上你的环境就配置好了 <<<**
+
+## 脚手架cli
 
 ```bash
 marx create|c [options] [name]  # create marx app
@@ -47,6 +43,7 @@ marx generate|g [type] [name]   # generate module
 marx route|r [options] [url]
 ```
 
+注意：目前这个脚手架还比较初级，你看下下面的todolist就知道了。
 
 ## 脚手架设计思路
 
