@@ -1,3 +1,8 @@
+## 历史沿革
+- 该脚手架源于内部项目[MarX框架](https://github.com/wangchao0502/MarX)
+- 将MarX框架的脚手架逻辑和核心逻辑进行了拆分，形成了marx-tool 和 marx-core两部分
+- marx-tool作为开发依赖引入（里面包含了部分构建逻辑），marx-core作为线上依赖引入
+
 ## 环境搭建
 
 推荐node和npm版本如下，npm4有破坏性改动，有些包可能会安装出错，所以不推荐升级。
@@ -5,19 +10,14 @@
 **node v6.10.0**
 **npm v3.10.10**
 
-首先在你的bash config文件中添加以下代码（如果用的zsh，文件路径为~/.zshrc），并执行`source ~/.zshrc`使配置生效。
-
-> alias ynpm="npm --registry=https://registry.npm.qima-inc.com"
-
-- 0.6.0 以上的@youzan/marx包将脚手架逻辑和构建逻辑抽离到了@youzan/marx-tool,
-- 使用0.6.0以上版本的脚手架逻辑，需要全局安装@youzan/marx-tool，下面是通过脚手架命令初始化项目目录
+- 使用脚手架初始化项目目录结构
 
 ```shell
-  ynpm i @youzan/marx-tool -g
+  npm i marx-tool -g
   marx create marx-demo
   cd marx-demo
 ```
-- 如果不需要创建新项目，仅仅是开发已有项目，则不需要全局安装@youzan/marx-tool，初始化的项目中已把@youzan/marx-tool作为开发依赖引入，可以直接使用marx框架的构建逻辑。
+- 如果不需要创建新项目，仅仅是开发已有项目，则不需要全局安装marx-tool，初始化的项目中已把marx-tool作为开发依赖引入，可以直接使用marx框架的构建逻辑。
 
 
 **>>> 以上你的环境就配置好了 <<<**
@@ -33,7 +33,7 @@
 
 > npm start
 
-> npm run watch
+> npm run watch #暂时还不支持（对内部项目superman有依赖，该项目还未开源）
 
 如果遇到类似下面的提示，请运行`npm rebuild`命令重新编译相关依赖包
 
@@ -42,9 +42,9 @@
 ## cli
 
 ```bash
-create|c [options] [name]  # create marx app
-generate|g [type] [name]   # generate module
-route|r [options] [url]
+marx create|c [options] [name]  # create marx app
+marx generate|g [type] [name]   # generate module
+marx route|r [options] [url]
 ```
 
 

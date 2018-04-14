@@ -22,7 +22,7 @@
     "lint"
   ],
   "devDependencies": {
-    "@youzan/marx-tool": "^${mtVersion}",
+    "marx-tool": "^${mtVersion}",
     "antd": "^2.7.2",
     "babel-eslint": "^7.1.1",
     "browser-sync": "^2.18.5",
@@ -39,7 +39,7 @@
     "react-router": "^3.0.0"
   },
   "dependencies": {
-    "@youzan/marx": "^${version}",
+    "marx-core": "^${version}",
     "bunyan": "^1.8.5",
     "co-redis": "^2.1.1",
     "koa": "^2.0.0",
