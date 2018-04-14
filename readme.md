@@ -29,7 +29,7 @@
 ## 如何使用
 
 以下两个命令分别在两个bash窗口执行，`npm start`启动开发环境的node服务，
-`npm run watch`启动实时打包功能。
+`npm run watch`启动实时打包功能(该功能暂时不支持，需自行实现（因为依赖了内部工具superman，该工具未开源，所以被砍掉了)）。
 
 > npm start
 

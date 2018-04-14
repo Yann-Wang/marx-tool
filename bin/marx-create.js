@@ -72,10 +72,10 @@ const nodeSassInstall = (cb) => {
     });
 };
 
-const ynpmInstall = (name, dest, cb) => {
-  remind('Running ynpm install...');
+const npmInstall = (name, dest, cb) => {
+  remind('Running npm install...');
 
-  spawn('npm', ['install', '--registry=http://registry.npm.qima-inc.com'], { stdio: 'inherit' })
+  spawn('npm', ['install'], { stdio: 'inherit' })
     .on('close', () => {
       successLog(name, dest);
       cb && cb();
@@ -104,7 +104,7 @@ const create = (name, options) => {
       successLog(name, destPath);
     } else {
       process.chdir(name);
-      nodeSassInstall(() => ynpmInstall(name, destPath));
+      nodeSassInstall(() => npmInstall(name, destPath));
     }
   });
 };

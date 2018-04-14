@@ -9,12 +9,9 @@
     "start": "NODE_ENV=development run-p start:server start:client",
     "pre": "NODE_ENV=production marx babel server/app.js | bunyan --time local -o short",
     "cluster": "NODE_ENV=development run-p start:server:cluster start:client",
-    "dashboard": "NODE_ENV=development marx dashboard",
     "sync": "NODE_ENV=development marx sync | bunyan --time local -o short",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "lint": "eslint -c .eslintrc server client --ext .js,.jsx",
-    "watch": "marx watch",
-    "publish": "marx publish",
     "production": "NODE_ENV=production node publish/server/app.js | bunyan --time local"
   },
   "pre-commit": [

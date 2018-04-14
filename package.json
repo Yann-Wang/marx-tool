@@ -7,7 +7,7 @@
   "bin": {
     "marx": "./bin/marx.js"
   },
-  "author": "Raphael",
+  "author": "Raphael, spray",
   "license": "ISC",
   "dependencies": {
     "babel-cli": "~6.23.0",
