@@ -93,7 +93,6 @@ const create = (name, options) => {
   copyFiles(boilPath, destPath, () => {
     tpl.createTemplate(cwd, {
       './template/package.json.template': `${name}/package.json`,
-      './template/superman.json.template': `${name}/superman.json`,
       './template/editorconfig.template': `${name}/.editorconfig`,
       './template/eslintignore.template': `${name}/.eslintignore`,
       './template/eslintrc.template': `${name}/.eslintrc`,

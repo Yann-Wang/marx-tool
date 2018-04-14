@@ -87,8 +87,6 @@ model:      Account, User
 
 ### TODO
 
-● 完全使用Superman进行打包
-
 ● 支持LiveReload功能
 
 ○ 支持将打包错误显示在浏览器 **[不实用，推迟]**
